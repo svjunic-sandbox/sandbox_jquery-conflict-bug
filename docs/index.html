@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="./jquery-1.10.1.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+      $(function() {
+        $('#btnLoadJquery3').on('click', function(){
+          var script = document.createElement('script');
+          script.src = './jquery-3.3.1.min.js';
+          $('head').append(script);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <dl id="log">
+      <dt>タイム</dt>
+      <dd></dd>
+    </dl>
+    <button type="button" id="btnLoadJquery3">違うjQuery読み込み</button>
+    <button type="button" id="btn">クリックしてログを更新</button>
+  </body>
+</html>
